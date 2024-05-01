@@ -1,0 +1,333 @@
+@import url(../css/variables.css);
+@import url(../css/basic.css);
+@import url(../css/global-classes.css);
+@import url(../css/header.css);
+
+/* ================================== */
+/* ========== uniquely =========== */
+/* .uniquely {} */
+.uniquely__text {
+   /* font-size: 64px; */
+   font-size: 3.4vw;
+   line-height: 150%;
+   font-weight: 700;
+   /* margin-bottom: 110px; */
+   margin-bottom: 5.6vw;
+}
+.uniquely__text:last-child {
+   margin-bottom: 0;
+}
+.uniquely__text span {
+   color: var(--secondary);
+}
+/* ====== Медиа 600px ====== */
+@media (max-width: 600px) {
+   .uniquely__text {
+      font-size: 20px;
+      margin-bottom: 45px;
+   }
+}
+/* ========== uniquely /=========== */
+/* ========== picture =========== */
+.picture__box {
+   display: flex;
+   flex-direction: column;
+   gap: 10vw;
+}
+@media (max-width: 600px) {
+   .picture__box {
+      gap: 20px;
+   }
+}
+/* ========== picture /=========== */
+/* ========== price=========== */
+.price__box {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 14.5vw;
+   gap: 5vw;
+}
+.price__block {
+   display: flex;
+   box-shadow: -4px 0px 52px -13px #1C31EA;
+   border-radius: 40px;
+   padding: 211px 165px;
+   padding: 211px 8.5vw;
+   margin: 0 auto;
+}
+.price__block-vrap {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 22px;
+   width: 388px;
+   /* padding: 211px 0; */
+   margin: 0 auto;
+}
+.price__unit {
+   display: block;
+   font-size: 24px;
+   line-height: 150%;
+   font-weight: 700;
+   width: 100%;
+   padding: 15px 15px 19px 60px;
+   border: 2px solid var(--st);
+   border-radius: 20px;
+   position: relative;
+}
+.price__unit::before {
+   content: '';
+   top: 21px;
+   left: 24px;
+   display: block;
+   position: absolute;
+   background: url(../img/check.svg) 0 0 / contain no-repeat;
+   width: 26px;
+   height: 20px;
+}
+.price__subtitle {
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 150%;
+}
+.price__link {
+   font-size: 24px;
+   line-height: 150%;
+   font-weight: 700;
+   width: 100%;
+   padding: 15px 19px;
+   border: 2px solid var(--st);
+   border-radius: 20px;
+   color: var(--st);
+   text-align: center;
+   margin-top: 10px;
+}
+.price__text {
+   font-size: 20px;
+   line-height: 150%;
+   font-weight: 500;
+   max-width: 422px;
+}
+/* ====== Медиа 1200px ====== */
+@media (max-width: 1200px) {
+   .price__box {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0;
+      gap: 30px;
+  }
+}
+/* ====== Медиа 990px ====== */
+@media (max-width: 990px) {
+   .price__block-vrap {
+      padding: 0;
+      margin: 0 auto;
+  }
+   .price__box {
+      flex-direction: column-reverse;
+      gap: 5vw;
+  }
+  .price__block {
+   padding: 100px 20px;
+   }
+  .price__text {
+   max-width: 100%;
+   }
+}
+/* ====== Медиа 768px ====== */
+@media (max-width: 768px) {
+   .price__box {
+      gap: 30px;
+  }
+}
+
+/* ====== Медиа 450px ====== */
+@media (max-width: 450px) {
+   .price__text {
+      font-size: 16px;
+  }
+  .price__block {
+   padding: 45px 20px 85px;
+   }
+   .price__block-vrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      /* padding: 211px 0; */
+      margin: 0 auto;
+  }
+   .price__subtitle {
+      font-size: 45px;
+      margin-bottom: 23px;
+  }
+  .price__unit {
+      padding: 8px 15px 10px 70px;
+   }
+   .price__unit::before {
+      top: 14px;
+      left: 32px;
+      background: url(../img/check.svg) 0 0 / contain no-repeat;
+      width: 26px;
+      height: 20px;
+  }
+  .price__link {
+      margin-top: 0;
+      padding: 9px 15px;
+   }
+}
+/* ========== price /=========== */
+/* ========== review =========== */
+.review__box {
+   display: flex;
+   justify-content: center;
+   gap: 78px;
+}
+.review__box-vr {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+.review__box-item {
+   max-width: 728px;
+   padding: 24px 22px 16px;
+   border-radius: 40px;
+   border: 3px solid var(--st);
+}
+.review__box-item1 {
+   margin-top: 64px;
+}
+.review__box-user {
+   display: flex;
+   gap: 20px;
+   margin-bottom: 16px;
+}
+
+.review__box-image {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.review__user {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 36px;
+   margin-bottom: 4px;
+}
+.review__exec {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 30px;
+}
+.review__text {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+}
+/* ====== Медиа 1700px ====== */
+@media (max-width: 1700px) {
+   .review__box {
+      gap: 50px;
+  }
+}
+/* ====== Медиа 900px ====== */
+@media (max-width: 900px) {
+   .review__box {
+      gap: 30px;
+  }
+}
+/* ====== Медиа 768px ====== */
+@media (max-width: 768px) {
+   .review__box {
+      gap: 30px;
+      flex-direction: column;
+  }
+  .review__box-vr {
+      gap: 30px;
+   }
+   .review__box-item {
+      max-width: 100%;
+      margin: 0;
+  }
+}
+/* ====== Медиа 450px ====== */
+@media (max-width: 450px) {
+   .review__box {
+      gap: 20px;
+  }
+   .review__box-vr {
+      gap: 20px;
+  }
+   .review__box-item {
+      padding: 20px 10px 20px 20px;
+  }
+  .review__box-image {
+   width: 40px;
+   height: 40px;
+  }
+  .review__user {
+     font-size: 14px;
+     line-height: 21px;
+   }
+   .review__exec {
+      font-size: 12px;
+      line-height: 18px;
+  }
+  .review__box-user {
+      margin-bottom: 10px;
+   }
+   .review__text {
+      font-size: 12px;
+      line-height: 18px;
+  }
+}
+/* ========== review /=========== */
+
+
+
+
+
+
+
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+
+}
+
+/* ====== Медиа 0px /====== */
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+}
+
+/* ====== Медиа 0px /====== */
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+}
+
+/* ====== Медиа 0px /====== */
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+}
+
+/* ====== Медиа 0px /====== */
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+}
+
+/* ====== Медиа 0px /====== */
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+}
+
+/* ====== Медиа 0px /====== */
+/* ====== Медиа 0px ====== */
+@media (max-width: 0px) {
+}
+
+/* ====== Медиа 0px /====== */
+@media (max-width: 0px) {
+}

@@ -1,0 +1,66 @@
+.container {
+  /* max-width: 1410px; */
+  /* padding: 0 60px; */
+  padding: 0 3vw;
+  margin: 0 auto;
+}
+.padd {
+  /* padding: 400px 0 0; */
+  padding: 20vw 0 0;
+}
+.title {
+  /* font-size: 136px; */
+  font-size: 7vw;
+  line-height: 150%;
+  font-weight: 600;
+  padding-left: 14.5vw;
+  /* margin-bottom: 100px; */
+  margin-bottom: 5.3vw;
+}
+.subtitle {
+  font-size: 28px;
+  line-height: 122%;
+  font-weight: 600;
+}
+.text-repeat {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+/* ====== Медиа 960px ====== */
+@media (max-width: 960px) {
+  .container {
+    padding: 0 3vw;
+  }
+}
+/* ====== Медиа 768px ====== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+/* ====== Медиа 600px ====== */
+@media (max-width: 600px) {
+  .padd {
+    padding: 100px 0 0;
+  }
+  .title {
+    /* font-size: 136px; */
+    font-size: 13vw;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+}
+/* ====== Медиа 450px ====== */
+@media (max-width: 450px) {
+
+  /* .title {
+    font-size: 8vw;
+  } */
+}
+/* ====== Медиа 400px ====== */
+@media (max-width: 400px) {
+  /* .title {
+    font-size: 9vw;
+  } */
+}
