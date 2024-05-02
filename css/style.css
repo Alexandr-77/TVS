@@ -286,10 +286,107 @@
   }
 }
 /* ========== review /=========== */
+/* ========= akkard ========= */
+.akkard {
+   background: url(../img/accordion/bg-01.jpg) 0 0 / cover no-repeat;
+}
+.accordion {
+   max-width: 1022px;
+   margin-left: 14.5vw;
+   position: relative;
+}
+.accordion__item {
+   /* margin-bottom: 8px; */
+   border-radius: 4px;
+   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+}
+.accordion__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px 20px 16px;
+   color: var(--st);
+   font-size: 32px;
+   line-height: 150%;
+   font-weight: 700;
+   background-color: var(--bz);
+   border-bottom: 1px solid var(--st);
+   border-top-left-radius: 0.25rem;
+   border-top-right-radius: 0.25rem;
+   cursor: pointer;
+   transition: background-color 0.2s ease-out;
+}
+.accordion__header::after {
+   flex-shrink: 0;
+   width: 1.25rem;
+   height: 1.25rem;
+   margin-left: auto;
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+   background-repeat: no-repeat;
+   background-size: 1.25rem;
+   content: "";
+}
+.accordion__header-txt {
+   padding-right: 30px;
+}
+.accordion__item_show .accordion__header::after {
+   transform: rotate(-180deg);
+}
+.accordion__header:hover {
+   /* background-color: var(--secondary); */
+   box-shadow: 0px 8px 62px -20px #1C31EA;
+}
+.accordion__item_hidden .accordion__header {
+   border-bottom-right-radius: 0.25rem;
+   border-bottom-left-radius: 0.25rem;
+}
+.accordion__body {
+   font-size: 20px;
+   line-height: 150%;
+   padding: 0.75rem 1rem;
+   overflow: hidden;
+   /* background: #1C31EA; */
+   background: #000216;
+   box-shadow: 0px 8px 62px -20px #1C31EA;
+   border-bottom-right-radius: 0.25rem;
+   border-bottom-left-radius: 0.25rem;
+}
+.accordion__item:not(.accordion__item_show) .accordion__body {
+   display: none;
+}
+/* ====== media 990px ====== */
+@media (max-width: 990px) {
+   .accordion {
+      margin: 0;
+  }
+   .accordion__header  {
+      font-size: 24px;
+   }
+}
+/* ====== media 768px ====== */
+@media (max-width: 768px) {
+   .accordion__header  {
+      font-size: 18px;
+      padding: 12px 0px 16px;
+   }
+   .accordion__header-txt {
+      padding-right: 20px;
+  }
+}
+/* ====== media 450px ====== */
+@media (max-width: 450px) {
+   .accordion__header  {
+      font-size: 16px;
+   }
+}
+
+
+/* ========= akkard / ========= */
 
 
 
-
+/* ====== media 0px ====== */
+@media (max-width: 0px) {}
 
 
 

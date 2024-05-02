@@ -23,83 +23,35 @@ function rotateBurger() {
   }
 }
 
-
-// ======== swiper ========
-
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	autoplay: 500,
-	slidesPerView: 2.8,
-	spaceBetween: 100,
-	centeredSlides: true, 
-	loop: true,
-	// If we need pagination
-	pagination: {
-	el: '.swiper-pagination',
-	},
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
-	},
-
-});
-// ======== swiper / ========
-
-
-
-// ========= slyder slick ==========
-$('.slyder__box').slick({
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	infinite: true,
-	arrow: true,
-	dots: true,
-	autoplay: true,
-	autoplaySpeed: 3000,
-	responsive: [
-		{
-		  breakpoint: 1400,
-		  settings: {
-			 slidesToShow: 2,
-			 slidesToScroll: 1,
-			 infinite: true,
-			 dots: true
-		  }
-		},
-		{
-		  breakpoint: 768,
-		  settings: {
-			 slidesToShow: 1,
-			 slidesToScroll: 1
-		  }
-		}
-	 ]
- });
-
-
-// отправка формы =============>
-$(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо. Ваша заявка была отправлена.");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-});
-// ============================
 // ===============================================
+// ======== akkardion ========
+class ItcAccordion {
+	constructor(target, config) {
+	  this._el = typeof target === 'string' ? document.querySelector(target) : target;
+	  const defaultConfig = {
+		 alwaysOpen: true
+	  };
+	  this._config = Object.assign(defaultConfig, config);
+	  this.addEventListener();
+	}
+	addEventListener() {
+	  this._el.addEventListener('click', (e) => {
+		 const elHeader = e.target.closest('.accordion__header');
+		 if (!elHeader) {
+			return;
+		 }
+		 if (!this._config.alwaysOpen) {
+			const elOpenItem = this._el.querySelector('.accordion__item_show');
+			if (elOpenItem) {
+			  elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
+			}
+		 }
+		 elHeader.parentElement.classList.toggle('accordion__item_show');
+	  });
+	}
+ }
+
+ new ItcAccordion('#accordion-1');
+// ======== akkardion / ========
 
 new WOW().init();
