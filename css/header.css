@@ -237,7 +237,6 @@
   color: var(--st);
   word-spacing: 1vw;
   margin-bottom: 20px;
-  color: yellow;
 }
 h1 span {
   letter-spacing: -11px;
@@ -455,6 +454,10 @@ h1 span {
 /* ====== Медиа 550px /====== */
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
+  h1 {
+    font-size: 8.2vw;
+    color: blue;
+  }
   .polo__box {
     margin-bottom: 40px;
   }
