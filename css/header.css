@@ -455,8 +455,7 @@ h1 span {
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
   h1 {
-    font-size: 8.2vw;
-    color: blue;
+    font-size: 8vw;
     padding: 0 15px;
     text-align: left;
   }
