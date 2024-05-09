@@ -34,6 +34,10 @@
    flex-direction: column;
    gap: 10vw;
 }
+.picture__box-item {
+   border-radius: 2vw;
+   overflow: hidden;
+}
 @media (max-width: 600px) {
    .picture__box {
       gap: 20px;
@@ -750,7 +754,7 @@
    .footer__title {
       font-size: 9vw;
       margin-bottom: 10.4vw;
-  }
+   }
    .footer__bottom-box {
       display: none;
    }
@@ -761,13 +765,13 @@
       font-size: 36px;
       min-height: 150%;
       margin-bottom: 15px;
-  }
+   }
    .footer__list-item a, 
    .footer__tel, .footer__email, 
    .footer__download {
       font-size: 18px;
       font-weight: 500;
-  }
+   }
 }
 /* ====== Медиа 360px ====== */
 @media (max-width: 360px) {

@@ -228,15 +228,14 @@
 }
  h1 {
   font-family: 'Inter';
-  text-align: center;
+  /* text-align: center; */
   font-weight: 700;
-  /* font-size: clamp(6.5vw, 8.4vw, 9vw); */
-  font-size: 8.5vw;
+  font-size: 7.45vw;
   line-height: 150%;
-  margin-bottom: 25px;
   color: var(--st);
   word-spacing: 1vw;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 h1 span {
   letter-spacing: -11px;
@@ -407,9 +406,6 @@ h1 span {
   h1 span {
     letter-spacing: -3px;
   }
-  h1 {
-    font-size: 8.3vw;
-  }
   .main__box {
     flex-direction: column;
     padding-left: 0;
@@ -455,9 +451,7 @@ h1 span {
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
   h1 {
-    font-size: 8vw;
-    padding: 0 15px;
-    text-align: left;
+    font-size: 7vw;
   }
   .polo__box {
     margin-bottom: 40px;
