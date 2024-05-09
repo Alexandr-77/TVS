@@ -237,6 +237,7 @@
   color: var(--st);
   word-spacing: 1vw;
   margin-bottom: 20px;
+  color: yellow;
 }
 h1 span {
   letter-spacing: -11px;
