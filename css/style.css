@@ -599,6 +599,7 @@
    line-height: 150%;
    /* margin-bottom: 200px; */
    margin-bottom: 10.4vw;
+   color: yellow;
 }
 .footer__box {
    display: flex;
