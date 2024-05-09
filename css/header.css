@@ -457,6 +457,8 @@ h1 span {
   h1 {
     font-size: 8.2vw;
     color: blue;
+    padding: 0 15px;
+    text-align: left;
   }
   .polo__box {
     margin-bottom: 40px;
