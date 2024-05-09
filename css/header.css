@@ -334,9 +334,6 @@ h1 span {
   .header__avtor-box {
     margin-right: 0;
   }
-  .header__box-iconks {
-    display: none;
-  }
   .header__avtor-box span {
     width: 43px;
     height: 24px;
@@ -349,6 +346,9 @@ h1 span {
   }
   .header__avtor-box span:hover a {
     transform: translateY(-30px);
+  }
+  .header__box-iconks {
+    display: none;
   }
   .header__block-nav{
     display: none;
