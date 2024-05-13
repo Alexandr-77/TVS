@@ -1,10 +1,6 @@
 .header__wrap {
   width: 100%;
   color: var(--st);
-  /* background: url(../img/header/header-bg-1.jpg) 90% 0px / cover no-repeat; */
-  /* min-height: 695px; */
-  /* height: calc(100vh); */
-  padding: 16px 0;
   position: relative;
   z-index: 0;
 }
@@ -12,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 22px 0;
 }
 .header__logo {
   display: flex;
@@ -52,11 +48,11 @@
   /* font-weight: 700; */
   letter-spacing: -2px;
   color: var(--st);
-  font-size: 40px;
+  font-size: 38px;
   padding-right: 1px;
 }
 .header__avtor-box span:hover a {
-  transform: translateY(-54px);
+  transform: translateY(-50px);
 }
 /* ----------------- logo /----------------- */
 
@@ -230,7 +226,7 @@
   font-family: 'Inter';
   /* text-align: center; */
   font-weight: 700;
-  font-size: 7.45vw;
+  font-size: 7.3vw;
   line-height: 150%;
   color: var(--st);
   word-spacing: 1vw;

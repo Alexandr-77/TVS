@@ -256,6 +256,7 @@
    .review__box-item {
       max-width: 100%;
       margin: 0;
+      border-radius: 20px;
   }
 }
 /* ====== Медиа 450px ====== */
@@ -518,6 +519,9 @@
 }
 /* ========= social / ========= */
 /* ========= contakts ========= */
+.contakts__title {
+   margin-bottom: 0;
+}
 .contakts__box {
    display: flex;
    flex-wrap: wrap;

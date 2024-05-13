@@ -11,10 +11,11 @@
   /* font-size: 136px; */
   font-size: 7vw;
   line-height: 150%;
-  font-weight: 600;
+  font-weight: 700;
   padding-left: 14.5vw;
   /* margin-bottom: 100px; */
   margin-bottom: 5.3vw;
+  text-transform: uppercase;
 }
 .subtitle {
   font-size: 28px;
