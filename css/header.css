@@ -265,7 +265,7 @@ h1 span {
   font-weight: 700;
   color: var(--st);
   padding: 15px 45px 19px;
-  border: 1px solid var(--st);
+  border: 2px solid var(--st);
   border-radius: 20px;
 }
 .btn-2 {
