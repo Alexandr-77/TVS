@@ -46,7 +46,7 @@
 }
 .header__avtor-box a {
   /* font-weight: 700; */
-  letter-spacing: -2px;
+  letter-spacing: -4px;
   color: var(--st);
   font-size: 38px;
   padding-right: 1px;
